@@ -1,0 +1,61 @@
+<div class="products-types">
+    <div class="product-list">
+    @for(navLink of navLinkTypes; track navLink.id) {
+    <div 
+        class="nav-desc" 
+        (mouseover)="navLinkHover(navLink.id)"
+        (mouseout)="navLinkDown(navLink.id)"
+    >
+        <a href="#">{{ navLink.type }}</a>
+
+        @if(navLink.hover){
+        <div class="products-desc">
+            @if(navLink.desc?.navigate){
+                <div class="nav-products">
+                    <div class="tittle"><a href="">VOIR TOUT</a></div>
+                    @for(nav of navLink.desc.navigate; track nav){
+                        <div class="nav-desc">
+                            <a href="">{{nav}}</a>
+                        </div>
+                    }
+                </div>
+            }
+    
+            @if(navLink.desc?.brands){
+            <div class="nav-products">
+                    <div class="tittle">MARQUES</div>
+                    @for(brand of navLink.desc.brands; track brand){
+                        <div class="nav-desc">
+                            <a href="">{{brand}}</a>
+                        </div>
+                    }
+                </div>
+            }
+            @if(navLink.desc?.models){
+                <div class="nav-products">
+                    <div class="tittle">MODÈLES</div>
+                    @for(model of navLink.desc.models; track model){
+                        <div class="nav-desc">
+                            <a href="">{{model}}</a>
+                        </div>
+                    }
+                </div>
+            }
+
+            @if(navLink.desc?.category){
+                <div class="nav-products">
+                    <div class="tittle">CATÉGORIES</div>
+                    @for(category of navLink.desc.category; track category){
+                        <div class="nav-desc">
+                            <a href="">{{category}}</a>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+        }    
+    </div>
+    }
+    </div>
+</div>
+

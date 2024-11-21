@@ -1,0 +1,44 @@
+
+.container{
+    width: min-content;
+    height: min-content;
+    display: flex;
+    
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    background-color: red;
+}
+
+.btn-product{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.add-wish{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+}
+
+.add-wish img{
+    height: 30px;
+    width: 30px;
+}
+
+figcaption{
+    position: absolute;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+
+#search-bar {
+	display: flex;
+	background-color: white;
+	border-radius: 5px;
+	margin: 50px auto;
+	width: 400px;
+	overflow: hidden;
+    border: 1px rgba(0, 0, 0, 0.336) solid;
+}
+
+input {
+	all: unset;
+	flex-grow: 1;
+	padding: 12px 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+	border: none;
+	padding: 5px;
+	background-color: rgba(221, 221, 241, 0.623);
+	width: 35px;
+	cursor: pointer;
+}
+
+button img {
+	max-width: 25px;
+	max-height: 25px;
+}
+
+button:hover {
+	background-color: rgba(225, 225, 241, 0.384);
+}

@@ -1,0 +1,10 @@
+<div class="product-picture">
+    <!-- <div class="product-fig-large" [innerHTML]="displayProduct()"> -->
+        <div class="picture">
+            <img *ngFor="let img of product.allImages" [src]="img" alt="Product Image">
+
+        </div>
+    <!-- </div> -->
+    <div class="product-fig-small" [innerHTML]="displayProduct()" >
+    </div>
+</div>

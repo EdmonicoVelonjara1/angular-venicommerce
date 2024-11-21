@@ -1,0 +1,26 @@
+.product-fig-large ,
+.product-fig-small {
+    display: flex;
+    gap: 2rem;
+}
+
+.product-fig-large {
+    /* position: relative; */
+    width: 500px;
+    height: 600px;
+    background-color: yellow;
+    
+}
+
+.product-fig-large .picture {
+    width: 500px;
+    height: 600px;
+    /* margin: 0 5px 0 5px; */
+    /* display: none; */
+    background-color: blue;
+}
+
+.product-fig-large  img{
+    width: 50px;
+
+}
